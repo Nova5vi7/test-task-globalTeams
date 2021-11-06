@@ -1,0 +1,26 @@
+[
+  {
+    "id": "10cce470-e0f5-4be9-a13a-abd8aa3b023b",
+    "image": "http://localhost:3000/pari-match-img.png",
+    "name": "Card One",
+    "bonusText": "Bet £10 Get £20",
+    "description": "18+, Welcome Bonus: New Players only, 1st Deposit, Min Deposit: £10, max £10 bonus, valid for 14 days...",
+    "moneyBonus": "£10",
+    "mark": "9.5",
+    "visitLink": "https://parimatch.com/",
+    "detailLink": "https://parimatch.com/",
+    "rate": 0
+  },
+  {
+    "id": "f843a002-f864-44c7-adf0-cd1daa941001",
+    "image": "http://localhost:3000/pari-match-img.png",
+    "name": "Card Two",
+    "bonusText": "Bet £10 Get £20",
+    "description": "18+, Welcome Bonus: New Players only, 1st Deposit, Min Deposit: £10, max £10 bonus, valid for 14 days...",
+    "moneyBonus": "£10",
+    "mark": "9.5",
+    "visitLink": "https://parimatch.com/",
+    "detailLink": "https://parimatch.com/",
+    "rate": 2
+  }
+]

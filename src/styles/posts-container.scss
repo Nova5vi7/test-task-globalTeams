@@ -1,0 +1,18 @@
+@import "mixin";
+@import "variables";
+
+.posts-container {
+  max-width: 1132px;
+  width: 100%;
+  padding: 50px 20px;
+  @include flexbox;
+  @include flex-direction-column;
+  background: #FFFFFF;
+  border: 1px solid $gray;
+  box-sizing: border-box;
+  @include border-radius(12px);
+
+  @media (min-width: 992px) {
+    padding: 80px 35px;
+  }
+}

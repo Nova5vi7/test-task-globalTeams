@@ -1,0 +1,171 @@
+@import "mixin";
+@import "variables";
+
+.post {
+  @include flexbox;
+  @include align-items-center;
+  @include flex-direction-column;
+  padding-bottom: 49px;
+  border-bottom: 1px solid #D1D1D1;
+  margin-bottom: 49px;
+
+  @media (min-width: 992px) {
+    @include flex-direction-row;
+    @include justify-content-space-between;
+  }
+
+  &:last-child {
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+  }
+
+  &__img {
+    max-width: 276px;
+    max-height: 148px;
+    width: 100%;
+    margin: 0 0 30px;
+
+    @media (min-width: 992px) {
+      margin: 0 30px 0 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content-block {
+    width: 100%;
+    @include flexbox;
+    @include align-items-center;
+    @include flex-direction-column;
+
+    @media (min-width: 768px) {
+      @include flex-direction-row;
+      @include justify-content-space-between;
+    }
+  }
+
+  &__text-block {
+    max-width: 211px;
+    width: 100%;
+    margin: 0 0 15px;
+
+    @media (min-width: 768px) {
+      margin: 0 15px 0 0;
+    }
+
+    h3 {
+      max-width: 93px;
+      @include font-bold;
+      font-size: 24px;
+      line-height: 1.16;
+      margin: 0 auto 10px;
+      text-transform: uppercase;
+    }
+
+    p {
+      @include font-regular;
+      font-size: 12px;
+      line-height: 1.16;
+      margin: 0;
+
+      button {
+        padding: 0;
+        margin-left: 2px;
+        text-decoration: underline;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: $text-color;
+      }
+    }
+
+    h3, p {
+      text-align: center;
+    }
+  }
+
+  &__bonus {
+    @include font-bold;
+    font-size: 24px;
+    line-height: 1.16;
+    margin: 0 0 15px;
+
+    @media (min-width: 768px) {
+      margin: 0 15px 0 0;
+    }
+  }
+
+  &__rating-block {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 15px;
+
+    @media (min-width: 768px) {
+      max-width: 108px;
+      margin: 0 15px 0 0;
+    }
+
+    p, a {
+      @include font-regular;
+      font-size: 16px;
+      line-height: 1.12;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      display: inline-block;
+      margin: 0;
+      color: $text-color;
+    }
+  }
+
+  &__mark {
+    @include font-medium;
+    font-size: 64px;
+    line-height: 1.17;
+    margin: 0 0 15px;
+
+    @media (min-width: 768px) {
+      margin: 0 15px 0 0;
+    }
+  }
+
+  &__btn-link {
+    display: block;
+    max-width: 248px;
+    width: 100%;
+    padding: 13.5px;
+    border-radius: 4px;
+    text-align: center;
+    @include font-bold;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    background-color: $button-color;
+    color: #FFFFFF;
+    text-decoration: none;
+    @include transition(all 0.3s ease);
+
+    @media (min-width: 375px) {
+      max-width: 248px;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 183px;
+    }
+
+    @media (min-width: 992px) {
+      &:hover {
+        background-color: $button-color-hover;
+      }
+    }
+  }
+
+}

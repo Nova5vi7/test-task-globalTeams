@@ -1,0 +1,50 @@
+@import "mixin";
+@import "variables";
+
+.rating {
+  max-width: 108px;
+  width: 100%;
+  margin: 7px auto;
+
+  &__wrap {
+    @include flexbox;
+    @include justify-content-space-between;
+    @include align-items-center;
+    @include flex-direction-row-reverse;
+
+    button {
+      width: 100%;
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      svg {
+        @include transition(all 0.3s ease);
+      }
+
+      &.not-active svg {
+        stroke: #72849A;
+      }
+
+      &.active svg {
+        stroke: $rating-color;
+      }
+    }
+
+    & > button:hover,
+    & > button:hover ~ button {
+      svg {
+        stroke: $rating-color;
+      }
+    }
+
+    & > button:hover,
+    & > button:hover ~ button {
+      svg {
+        stroke: $rating-color;
+      }
+    }
+
+  }
+}
